@@ -14,7 +14,11 @@
     --font-primary: 'Open Sans', sans-serif;
 }
 
-@base {
+body {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-block-start: 30px;
 }
 
 #typed-output::before {

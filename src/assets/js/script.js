@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileNav = document.querySelector('.mobile-nav');
     const closeNav = document.querySelector('.close-mobile-nav');
     const navOverlay = document.querySelector('.nav-overlay');
+    const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
 
     openNav.onclick = function () {
         navOverlay.classList.remove('hidden');
@@ -61,4 +62,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     closeNav.addEventListener('click', closeMobileNav);
     navOverlay.addEventListener('click', closeMobileNav);
+    mobileNavLink.forEach((element) => {
+        element.addEventListener('click', closeMobileNav);
+    });
+    const links = document.querySelectorAll('.smooth-scroll');
+    links.forEach((link) => {
+        link.addEventListener('click', smoothScroll);
+    });
+
+    function smoothScroll(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scroll({
+            top: targetElement.offsetTop,
+            left: 0,
+            behavior: 'smooth',
+        });
+    }
 });
