@@ -75,11 +75,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
+        const headerHeight = document.querySelector('header').clientHeight + 20;
 
         window.scroll({
-            top: targetElement.offsetTop,
+            top: targetElement.offsetTop - headerHeight,
             left: 0,
             behavior: 'smooth',
         });
     }
+    function setHeader() {
+        var header = document.querySelector('header');
+        header.classList.toggle('scrolled', window.scrollY > 30);
+    }
+    setHeader();
+    window.addEventListener('scroll', function () {
+        setHeader();
+    });
 });

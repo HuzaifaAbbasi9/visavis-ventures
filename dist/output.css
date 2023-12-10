@@ -1253,7 +1253,7 @@ body {
 }
 
 section {
-  scroll-margin-block-start: 30px;
+  scroll-margin-top: 100px;
 }
 
 #typed-output::before {
@@ -1273,6 +1273,12 @@ section {
   width: 100%;
   height: auto;
   transform: translate3d(0, 0, 0);
+}
+
+header.scrolled {
+  position: fixed;
+  background-color: black;
+  color: white;
 }
 
 .hover\:rotate-90:hover {
