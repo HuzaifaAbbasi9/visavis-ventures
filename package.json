@@ -1,0 +1,17 @@
+{
+    "devDependencies": {
+        "tailwindcss": "^3.3.6"
+    },
+    "dependencies": {
+        "@tailwindcss/line-clamp": "^0.4.4"
+    },
+    "name": "visavis-ventures",
+    "version": "1.0.0",
+    "main": "tailwind.config.js",
+    "scripts": {
+        "dev": "npx tailwindcss -i ./src/assets/css/input.css -o ./dist/output.css --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

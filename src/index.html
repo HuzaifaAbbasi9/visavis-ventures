@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <title>Vis-a-Vis Ventures Company Builder</title>
+    </head>
+    <body class="font-body bg-dark-100 text-accent-100 lg:text-14px max-lg:text-12px font-normal">
+        <header class="absolute top-0 left-0 w-full z-85">
+            <div class="container">
+                <nav class="flex items-center justify-between lg:space-x-10 lg:py-24px max-lg:py-16px">
+                    <div class="flex items-center justify-between lg:space-x-60px">
+                        <a href="#" class="max-w-150px">
+                            <img src="assets/images/logo-dark.png" alt="" />
+                        </a>
+                        <ul class="lg:flex lg:items-center lg:space-x-8 max-lg:hidden">
+                            <li class="relative">
+                                <a
+                                    href="#"
+                                    class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                                >
+                                    Ablauf
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a
+                                    href="#"
+                                    class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                                >
+                                    Unsere Startups
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a
+                                    href="#"
+                                    class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                                >
+                                    Code4Equity
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a
+                                    href="#"
+                                    class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                                >
+                                    Unsere Leistungen
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a
+                                    href="#"
+                                    class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                                >
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-end lg:space-x-5 max-lg:space-x-4">
+                        <a href="en/index.html" class="wh-30px rounded-full overflow-hidden border border-accent-100">
+                            <img src="assets/images/de.svg" class="object-cover" alt="" />
+                        </a>
+                        <button
+                            class="max-lg:hidden flex items-center justify-center gap-3 lg:text-14px max-lg:text-12px group transition-opacity duration-300 ease-linear hover:opacity-80"
+                        >
+                            Getting Started
+                            <i
+                                class="fa-solid fa-arrow-right-long transition-transform duration-300 ease-linear group-hover:translate-x-1"
+                            ></i>
+                        </button>
+                        <button class="open-mobile-nav lg:hidden">
+                            <i class="fa-solid fa-bars-staggered text-28px"></i>
+                        </button>
+                    </div>
+                </nav>
+                <div class="fixed inset-0 bg-accent-100 bg-opacity-70 z-86 nav-overlay wh-full hidden"></div>
+                <div
+                    class="fixed top-0 left-0 max-w-300px bg-dark-100 z-90 mobile-nav py-5 wh-full transition-transform -translate-x-full opacity-0"
+                >
+                    <button
+                        class="close-mobile-nav text-20px absolute top-3 right-4 transition-transform duration-300 hover:scale-105"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="divide-y divide-accent-100 border-y border-y-accent-100 mt-12">
+                        <li class="relative py-3 px-4">
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                            >
+                                Ablauf
+                            </a>
+                        </li>
+                        <li class="relative py-3 px-4">
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                            >
+                                Unsere Startups
+                            </a>
+                        </li>
+                        <li class="relative py-3 px-4">
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                            >
+                                Code4Equity
+                            </a>
+                        </li>
+                        <li class="relative py-3 px-4">
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                            >
+                                Unsere Leistungen
+                            </a>
+                        </li>
+                        <li class="relative py-3 px-4">
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px relative transition-opacity duration-300 ease-linear hover:opacity-80"
+                            >
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="lg:space-y-16 max-lg:space-y-10">
+            <section class="relative lg:pt-150px max-lg:pt-90px">
+                <div class="container">
+                    <div
+                        class="relative z-2 flex lg:items-stretch max-lg:flex-col-reverse max-w-800px w-full max-lg:text-center"
+                    >
+                        <div class="lg:flex lg:flex-col lg:justify-between lg:max-w-110px max-lg:mt-5 max-lg:space-y-4">
+                            <p class="lg:pt-22px">
+                                Vis-a-Vis Ventures is a company builder for digital business models
+                            </p>
+                            <button
+                                class="lg:text-50px max-lg:text-35px lg:-rotate-45 transition-opacity duration-300 ease-linear hover:opacity-80"
+                            >
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </div>
+                        <h1
+                            class="lg:ml-40px font-primary lg:text-120px max-lg:text-60px leading-1.15 font-bold max-w-600px"
+                        >
+                            We are yours
+                            <div id="typed-output">Investor</div>
+                        </h1>
+                    </div>
+                    <div class="z-0 absolute top-0 lg:right-20 max-lg:hidden">
+                        <img
+                            src="assets/images/image2.jpeg"
+                            class="max-w-540px w-full aspect-1.2/1 object-cover"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="relative overflow-hidden">
+                <div class="container">
+                    <div class="relative">
+                        <h2 class="lg:text-45px max-lg:text-34px font-semibold font-primary">
+                            Get started with us in no time
+                        </h2>
+                        <div class="relative">
+                            <div class="case-studies-slider overflow-hidden lg:mt-20px max-lg:mt-15px w-full">
+                                <div class="swiper-wrapper w-full">
+                                    <div class="relative swiper-slide" style="width: 80%">
+                                        <div class="relative overflow-hidden group">
+                                            <img
+                                                src="assets/images/case-study-img-1.jpg"
+                                                class="w-full transition-transform duration-300 ease-linear group-hover:scale-105"
+                                                alt=""
+                                            />
+                                            <button
+                                                class="absolute bottom-4 right-4 wh-35px rounded-full bg-accent-100 p-1 grid place-items-center lg:text-18px max-lg:text-16px text-dark-100 transition-transform duration-300 ease-linear hover:rotate-90"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="lg:mt-14px max-lg:mt-8px space-y-6px">
+                                            <p class="text-light-100 uppercase">3-4 days | Figma design</p>
+                                            <h3
+                                                class="lg:text-25px max-lg:text-22px font-primary font-semibold capitalize"
+                                            >
+                                                Design
+                                            </h3>
+                                            <p class="line-clamp-2">
+                                                After our initial meeting and the assignment, we will create a complete
+                                                one together with you Design of our product in figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="relative swiper-slide" style="width: 80%">
+                                        <div class="relative overflow-hidden group">
+                                            <img
+                                                src="assets/images/case-study-img-2.jpg"
+                                                class="w-full transition-transform duration-300 ease-linear group-hover:scale-105"
+                                                alt=""
+                                            />
+                                            <button
+                                                class="absolute bottom-4 right-4 wh-35px rounded-full bg-accent-100 p-1 grid place-items-center lg:text-18px max-lg:text-16px text-dark-100 transition-transform duration-300 ease-linear hover:rotate-90"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="lg:mt-14px max-lg:mt-8px space-y-6px">
+                                            <p class="text-light-100 uppercase">4-8 weeks | First version</p>
+                                            <h3
+                                                class="lg:text-25px max-lg:text-22px font-primary font-semibold capitalize"
+                                            >
+                                                Develop Product
+                                            </h3>
+                                            <p class="line-clamp-2">
+                                                We don't think much of MVPs or the like, since the experience gained
+                                                cannot usually be implemented 1:1 in the actual end product. With a
+                                                large team, we are therefore implementing our joint project directly in
+                                                a finished first version.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="relative swiper-slide" style="width: 80%">
+                                        <div class="relative overflow-hidden group">
+                                            <img
+                                                src="assets/images/case-study-img-3.jpg"
+                                                class="w-full transition-transform duration-300 ease-linear group-hover:scale-105"
+                                                alt=""
+                                            />
+                                            <button
+                                                class="absolute bottom-4 right-4 wh-35px rounded-full bg-accent-100 p-1 grid place-items-center lg:text-18px max-lg:text-16px text-dark-100 transition-transform duration-300 ease-linear hover:rotate-90"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="lg:mt-14px max-lg:mt-8px space-y-6px">
+                                            <p class="text-light-100 uppercase">Monthly | Continuous growth</p>
+                                            <h3
+                                                class="lg:text-25px max-lg:text-22px font-primary font-semibold capitalize"
+                                            >
+                                                Ree Maintenance And Further Development For The First Year
+                                            </h3>
+                                            <p class="line-clamp-2">
+                                                With our team of marketing and sales specialists as well as financing
+                                                experts, we support the growth and further development of our startup.
+                                                Over 100 supervised projects speak for themselves. At a cost of less
+                                                than a full-time developer - including new features every month with our
+                                                developers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative">
+                <div class="container">
+                    <div class="relative">
+                        <h2 class="text-center capitalize lg:text-45px max-lg:text-34px font-semibold font-primary">
+                            Testimonials
+                        </h2>
+                        <div
+                            class="grid max-sm:grid-cols-1 gap-5 lg:mt-6 max-lg:mt-4 mm-sm-lg:grid-cols-2 lg:grid-cols-3"
+                        >
+                            <div
+                                class="transition-all duration-1000 bg-white hover:bg-primary-100 hover:shadow-xl p-4 relative z-40 group"
+                            >
+                                <div
+                                    class="absolute bg-primary-100/50 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2"
+                                ></div>
+                                <div class="py-2 lg:px-8 max-lg:px-6 relative space-y-3">
+                                    <i
+                                        class="fa-solid fa-quote-left lg:text-30px max-lg:text-25px text-dark-100 group-hover:text-accent-100"
+                                    ></i>
+                                    <h3 class="text-lg font-semibold text-dark-100 group-hover:text-accent-100">
+                                        Max, Snow Resort Tycoon
+                                    </h3>
+                                    <p class="text-base text-dark-100 group-hover:text-accent-100">
+                                        Working with the Visavis Ventures team was highly professional at all times. In
+                                        addition to development, the team also supported us in marketing and financing
+                                        our truly extensive project.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="transition-all duration-1000 bg-white hover:bg-primary-100 hover:shadow-xl p-4 relative z-40 group"
+                            >
+                                <div
+                                    class="absolute bg-primary-100/50 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2"
+                                ></div>
+                                <div class="py-2 lg:px-8 max-lg:px-6 relative space-y-3">
+                                    <i
+                                        class="fa-solid fa-quote-left lg:text-30px max-lg:text-25px text-dark-100 group-hover:text-accent-100"
+                                    ></i>
+                                    <h3 class="text-lg font-semibold text-dark-100 group-hover:text-accent-100">
+                                        Mustafa, Food Delivery App
+                                    </h3>
+                                    <p class="text-base text-dark-100 group-hover:text-accent-100">
+                                        I was impressed by the ease of use, the inactive marketing option and the 24/7
+                                        availability of the team. I would advise any of my colleagues to work with
+                                        Visavis-Ventures.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="transition-all duration-1000 bg-white hover:bg-primary-100 hover:shadow-xl p-4 relative z-40 group"
+                            >
+                                <div
+                                    class="absolute bg-primary-100/50 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2"
+                                ></div>
+                                <div class="py-2 lg:px-8 max-lg:px-6 relative space-y-3">
+                                    <i
+                                        class="fa-solid fa-quote-left lg:text-30px max-lg:text-25px text-dark-100 group-hover:text-accent-100"
+                                    ></i>
+                                    <h3 class="text-lg font-semibold text-dark-100 group-hover:text-accent-100">
+                                        Morgan, Hornycorn
+                                    </h3>
+                                    <p class="text-base text-dark-100 group-hover:text-accent-100">
+                                        It was a pleasure to work with the Visavis-Ventures Team. The delivered graphics
+                                        were really fantastic.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2
+                        class="text-center capitalize lg:text-45px max-lg:text-34px font-semibold font-primary lg:mb-8 max-lg:mb-5"
+                    >
+                        Say hello to
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-center">
+                        <div class="bg-gray-700 lg:p-8 max-lg:p-5">
+                            <i class="fas fa-laptop-code lg:text-5xl max-lg:text-3xl mb-4"></i>
+                            <p class="text-lg font-semibold mb-4">Real CTO</p>
+                            <p>A CTO who pitches with you in front of investors.</p>
+                        </div>
+                        <div class="bg-gray-700 lg:p-8 max-lg:p-5">
+                            <i class="fas fa-handshake lg:text-5xl max-lg:text-3xl mb-4"></i>
+                            <p class="text-lg font-semibold mb-4">Real CoFounder</p>
+                            <p>A CoFounder who works with you on the joint startup.</p>
+                        </div>
+                        <div class="bg-gray-700 lg:p-8 max-lg:p-5">
+                            <i class="fas fa-users lg:text-5xl max-lg:text-3xl mb-4"></i>
+                            <p class="text-lg font-semibold mb-4">Team of Developers</p>
+                            <p>A team of developers who bring your product live.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="">
+                <div class="container">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-12">
+                        <div class="max-md:mb-5">
+                            <img src="assets/images/code-img.jpg" alt="Startup Image" />
+                        </div>
+                        <div class="lg:space-y-4 max-lg:space-y-2 text-left lg:text-base max-lg:text-sm">
+                            <h2 class="capitalize lg:text-30px max-lg:text-25px pb-2 font-semibold font-primary">
+                                Code4Equity
+                            </h2>
+                            <p>
+                                Empowering startups beyond traditional agency work through our innovative Code4Equity
+                                program.
+                            </p>
+                            <p>What does that mean exactly?</p>
+                            <p>
+                                Imagine this: Someone like Moritz dreams of a TikTok-like app but faces funding
+                                challenges. We step in, crafting Moritz's app for a modest 4-digit fee and a 7-15% stake
+                                in his venture.
+                            </p>
+                            <p>
+                                Our commitment extends beyond development. We offer ongoing support, expertise in
+                                financing and marketing, ensuring the joint project flourishes.
+                            </p>
+                            <p>
+                                While we often exit after the first or second round of financing, we're open to staying
+                                on as a valued agency partner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="">
+                <div class="container">
+                    <div class="grid max-sm:gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">App development</p>
+                            <h4 class="mt-2 lg:text-26px max-lg:text-22px font-semibold text-gray-100">
+                                3.5 - 7k € +
+                                <span class="text-base font-normal text-gray-400">shares</span>
+                            </h4>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">
+                                    Validate your product by getting paying customers
+                                </div>
+                                <div class="text-13px text-gray-300">
+                                    A website and process that can solve your problem for your customers
+                                </div>
+                                <div class="text-13px text-gray-300">2 Weeks</div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">Web development</p>
+                            <h4 class="mt-2 lg:text-26px max-lg:text-22px font-semibold text-gray-100">
+                                3.5 - 7k € +
+                                <span class="text-base font-normal text-gray-400">shares</span>
+                            </h4>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">
+                                    Specification and design for your market entry product
+                                </div>
+                                <div class="text-13px text-gray-300">
+                                    Clickable mockup, clear roadmap and reliable numbers for you and investors.
+                                </div>
+                                <div class="text-13px text-gray-300">2 Weeks</div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">Game development</p>
+                            <h4 class="mt-2 lg:text-26px max-lg:text-22px font-semibold text-gray-100">
+                                5 - 15k €
+                                <span class="text-base font-normal text-gray-400">without shares</span>
+                            </h4>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">
+                                    Launch your product to gain scalable customers.
+                                </div>
+                                <div class="text-13px text-gray-300">
+                                    A fully functioning app or webapp so you can scalably serve customers.
+                                </div>
+                                <div class="text-13px text-gray-300">10 Weeks</div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">eCommerce</p>
+                            <h4 class="mt-2 lg:text-26px max-lg:text-22px font-semibold text-gray-100">On request</h4>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">Maintain and grow Product Market Fit</div>
+                                <div class="text-13px text-gray-300">
+                                    More customers and a better conversion funnel with each customer feedback
+                                </div>
+                                <div class="text-13px text-gray-300">Continuous</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="!mt-0 bg-gradient-to-b from-rgb(var(--dark-100)) via-rgb(var(--dark-200)) to-rgb(var(--dark-200)) text-white lg:py-12 max-lg:py-8"
+            >
+                <div class="container">
+                    <div class="space-y-2 lg:max-w-600px lg:mx-auto text-center">
+                        <h3 class="lg:text-30px max-lg:text-25px font-semibold font-primary">Don't Give Up Shares?</h3>
+                        <p class="lg:pb-4 max-lg:pb-2">
+                            We also work for pure payment without a share fee. We will be happy to prepare an individual
+                            offer on request.
+                        </p>
+                        <h3 class="text-2xl font-semibold">Additional Services</h3>
+                        <p>Explore our tailored solutions, and let's create a partnership that drives success.</p>
+                    </div>
+                    <div
+                        class="grid max-sm:gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:mt-12 max-lg:mt-8"
+                    >
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">Financing</p>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">Receive funding for innovative business ideas</div>
+                                <div class="text-13px text-gray-300">
+                                    Research about elegible programs, preparation, application and pitching
+                                </div>
+                                <div class="text-13px text-gray-300 capitalize">together</div>
+                                <div class="text-13px text-gray-300 capitalize">4 Weeks</div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">Distribution</p>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">
+                                    Save time and money through clear focus and reach your goals twice as fast
+                                </div>
+                                <div class="text-13px text-gray-300">
+                                    Individual coaching with seiral entrepreneurs in Tech, Sales, Marketing etc.
+                                </div>
+                                <div class="text-13px text-gray-300 capitalize">Continuous</div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">E-Marketing</p>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">Ensure code quality and get clear next steps</div>
+                                <div class="text-13px text-gray-300">
+                                    Report and clear recommendations that will save you months of work
+                                </div>
+                                <div class="text-13px text-gray-300 capitalize">2 Weeks</div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4 transition-colors duration-200 bg-gray-700 flex flex-col">
+                            <p class="text-lg font-medium text-gray-100">Marketing</p>
+                            <div class="lg:mt-5 lg:space-y-5 max-lg:space-y-3 mb-4">
+                                <div class="text-13px text-gray-300">Regain speed for your startup</div>
+                                <div class="text-13px text-gray-300">
+                                    Understanding of your own codebase, clear roadmap and numbers
+                                </div>
+                                <div class="text-13px text-gray-300 capitalize">4 Weeks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2
+                        class="capitalize lg:text-30px max-lg:text-25px pb-2 font-semibold font-primary lg:mb-7 max-lg:mb-5 text-center"
+                    >
+                        Own Startups
+                    </h2>
+                    <div class="flex flex-wrap justify-center -mx-11px">
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/event_ticket24.jpg"
+                                    alt="Event Ticket 24"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/gastrohub24.jpg"
+                                    alt="Gastrohub 24"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/horseinc.jpg"
+                                    alt="Horse Inc"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/me_fame.jpg"
+                                    alt="Me Fame"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/my_pitch.jpg"
+                                    alt="My Pitch"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/physio_vet_office.jpg"
+                                    alt="Physio Vet Office"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full w-1/2 md:w-1/3 lg:w-1/4 mb-5 px-10px">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    class="shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
+                                    src="assets/images/rechnungs_fuchs.jpg"
+                                    alt="Rechnungs Fuchs"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative">
+                <div class="container">
+                    <h2 class="capitalize lg:text-45px max-lg:text-34px font-semibold font-primary text-center">FAQ</h2>
+                    <div class="grid divide-y divide-neutral-200 max-w-2xl mx-auto mt-5">
+                        <div class="py-4">
+                            <button
+                                class="tab-btn w-full flex justify-between items-center font-medium cursor-pointer list-none text-left"
+                            >
+                                <span>Does the code belong to me?</span>
+                                <span class="transition tab-arrow-down">
+                                    <svg
+                                        fill="none"
+                                        height="24"
+                                        shape-rendering="geometricPrecision"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="tab-body h-0 transition-height duration-300 overflow-hidden">
+                                <p class="text-light-100 mt-3">
+                                    After full payment, and if the Code4Equity offer has been used, after the transfer
+                                    of the shares, the code is of course yours and will be sent to you via Github or
+                                    similar services.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <button
+                                class="tab-btn w-full flex justify-between items-center font-medium cursor-pointer list-none text-left"
+                            >
+                                <span>How do you receive your payment?</span>
+                                <span class="transition tab-arrow-down">
+                                    <svg
+                                        fill="none"
+                                        height="24"
+                                        shape-rendering="geometricPrecision"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="tab-body h-0 transition-height duration-300 overflow-hidden">
+                                <p class="text-light-100 mt-3">
+                                    In most cases we work with payments in milestones. A subdivision after sending the
+                                    design is common, as well as a further milestone after we have completed the coding.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <button
+                                class="tab-btn w-full flex justify-between items-center font-medium cursor-pointer list-none text-left"
+                            >
+                                <span>What does the word "completion" mean in your listings?</span>
+                                <span class="transition tab-arrow-down">
+                                    <svg
+                                        fill="none"
+                                        height="24"
+                                        shape-rendering="geometricPrecision"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="tab-body h-0 transition-height duration-300 overflow-hidden">
+                                <p class="text-light-100 mt-3">
+                                    "Completion" means the completion of the coding of the previously agreed services.
+                                    We will demonstrate completion by sending a video or a clickable test version. Due
+                                    to missing API keys, some features may not work fully in a clickable test version,
+                                    the project is still completed and the API keys are of course added free of charge
+                                    before uploading to the customer's server. We can only make any changes after
+                                    receipt of payment, as long as the previously discussed framework is fulfilled. Of
+                                    course, we accept minor changes free of charge.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <button
+                                class="tab-btn w-full flex justify-between items-center font-medium cursor-pointer list-none text-left"
+                            >
+                                <span>You're so cheap, how can that be? Is that serious?</span>
+                                <span class="transition tab-arrow-down">
+                                    <svg
+                                        fill="none"
+                                        height="24"
+                                        shape-rendering="geometricPrecision"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="tab-body h-0 transition-height duration-300 overflow-hidden">
+                                <p class="text-light-100 mt-3">
+                                    We would like to support startups & founders and know the lack of money when
+                                    starting a business ourselves. We see ourselves as your first investor and give each
+                                    of our customers an internal rating. Instead of investing money in you, we invest
+                                    our working hours and only take a small amount, usually 4 digits, to be able to
+                                    cover at least part of our costs such as wages, rent, servers, software, etc. as a
+                                    small safeguard. For example, if your offer consists of 5,000 euros and 10% company
+                                    shares, we usually invest working time equivalent to around 20,000 euros in you and
+                                    your project. In the further course, we are of course also interested in supporting
+                                    you as best we can to get our joint project asap in the black - only then will we
+                                    earn money ;)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <button
+                                class="tab-btn w-full flex justify-between items-center font-medium cursor-pointer list-none text-left"
+                            >
+                                <span>What is the difference to an agency?</span>
+                                <span class="transition tab-arrow-down">
+                                    <svg
+                                        fill="none"
+                                        height="24"
+                                        shape-rendering="geometricPrecision"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="tab-body h-0 transition-height duration-300 overflow-hidden">
+                                <p class="text-light-100 mt-3">
+                                    We are not an ordinary agency, but serial founders ourselves with a special offer.
+                                    We not only offer you the pure development, but also our own experience from more
+                                    than 10 successfully launched startups. We felt we made every conceivable mistake
+                                    that one can make and can therefore protect you from most stumbling blocks. When it
+                                    comes to development, we have often had the experience ourselves of being plunged
+                                    into high costs by external partners without really getting any closer to the goal.
+                                    To avoid this, we offer our Code4Equity model to ensure that we are pulling together
+                                    as a partner to achieve success together and not just billing hours. We act as
+                                    co-founders and advise you on which features really make sense and proactively give
+                                    you valuable tips and experience to save time and money. In addition, we support you
+                                    with our network of investors, marketing specialists, influencers and many other
+                                    exciting contacts. Thanks to our agile startup culture and our large and experienced
+                                    team, we usually achieve an MVP-capable project within a short time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:mt-8 max-lg:mt-5 parallax-container lg:h-500px max-lg:h-280px bg-[url('../../src/assets/images/image1.png')] bg-center bg-cover bg-fixed"
+                ></div>
+                <div class="container">
+                    <div class="flex items-start lg:py-12 max-lg:py-8 max-lg:flex-col">
+                        <div class="lg:max-w-150px lg:min-w-150px">
+                            <p class="lg:pt-12px lg:max-w-110px lg:min-w-110p">Have Any Questions ? Let’s Start Talk</p>
+                        </div>
+                        <div class="flex-1 lg:space-y-16 max-lg:space-y-10">
+                            <h3 class="capitalize lg:text-45px max-lg:text-34px font-semibold font-primaryd">
+                                Get In Touch
+                            </h3>
+                            <form class="flex lg:items-end max-lg:flex-col">
+                                <div class="flex-1 space-y-1 text-base">
+                                    <input
+                                        type="text"
+                                        class="outline-none !border-b border-b-light-100 py-3 !bg-transparent !ring-0 w-full"
+                                        placeholder="Full Name"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="outline-none !border-b border-b-light-100 py-3 !bg-transparent !ring-0 w-full"
+                                        placeholder="Phone Number"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="outline-none !border-b border-b-light-100 py-3 !bg-transparent !ring-0 w-full"
+                                        placeholder="Email"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="outline-none !border-b border-b-light-100 py-3 !bg-transparent !ring-0 w-full"
+                                        placeholder="Subject"
+                                    />
+                                    <textarea
+                                        rows="5"
+                                        class="resize-none outline-none !border-b border-b-light-100 py-3 !bg-transparent !ring-0 w-full"
+                                        placeholder="Message"
+                                    ></textarea>
+                                </div>
+                                <div class="lg:pl-16 max-lg:mt-5 max-lg:flex max-lg:items-center max-lg:justify-center">
+                                    <button
+                                        class="flex items-center justify-center gap-3 lg:text-20px max-lg:text-17px group transition-opacity duration-300 ease-linear hover:opacity-80"
+                                    >
+                                        Send
+                                        <i
+                                            class="fa-solid fa-arrow-right-long transition-transform duration-300 ease-linear group-hover:translate-x-1"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="lg:pt-20 max-lg:pt-8">
+            <div class="container">
+                <div class="flex lg:items-center lg:justify-between lg:mb-10 max-lg:mb-5">
+                    <div class="flex items-start justify-between sm:max-w-240px w-full max-md:flex-col space-y-1">
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="lg:text-16px max-lg:text-14px transition-opacity duration-300 hover:opacity-50"
+                                >
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="lg:text-16px max-lg:text-14px transition-opacity duration-300 hover:opacity-50"
+                                >
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="lg:text-16px max-lg:text-14px transition-opacity duration-300 hover:opacity-50"
+                                >
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="lg:text-16px max-lg:text-14px transition-opacity duration-300 hover:opacity-50"
+                                >
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="lg:text-16px max-lg:text-14px transition-opacity duration-300 hover:opacity-50"
+                                >
+                                    Jobs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="space-y-1">
+                        <li>
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px text-light-100 transition-opacity duration-300 hover:opacity-50"
+                            >
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px text-light-100 transition-opacity duration-300 hover:opacity-50"
+                            >
+                                Behance
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="lg:text-14px max-lg:text-12px text-light-100 transition-opacity duration-300 hover:opacity-50"
+                            >
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center py-4 border-t border-t-accent-100 border-opacity-60">
+                    &copy;2023 - GUSH Holding Ltd | All Rights Reserved
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
