@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Articulat-CF';
+    src: url('../fonts/Articulat-CF-Demi-Bold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Articulat-CF';
+    src: url('../fonts/Articulat-CF-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-boldoblique.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-demibold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-demiboldoblique.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-extrabold.otf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-extraboldoblique.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-extralight.otf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-extralightoblique.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-heavy.otf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-heavyoblique.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-lightoblique.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-mediumoblique.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-normal.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-normaloblique.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-regularoblique.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-thin.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-thinoblique.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Shruti-Font';
+    src: url('../fonts/Shruti-Font.ttf');
+}
+
+/* @font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Mono-Trial-Bold-Italic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Mono-Trial-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Mono-Trial-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Mono-Trial-Var-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Mono-Trial-Var-Roman.ttf');
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Black-Italic.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Black.ttf');
+    font-weight: 900;
+} */
+
+/* @font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Bold-Italic.ttf');
+} */
+
+/* @font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Bold.ttf');
+} */
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-Black-Italic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-Bold-Italic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-DemiBold-Italic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-DemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/TT-Interphases-Pro-Trial-Condensed-ExtraBold-Italic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-boldoblique.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-medium.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-mediumoblique.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-regular.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-regularoblique.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-light.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-thinoblique.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-extralight.otf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-extralightoblique.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-thin.otf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'TT-Interphases-Pro-Mono';
+    src: url('../fonts/Fontspring-DEMO-articulatcf-thinoblique.otf');
+    font-weight: 100;
+    font-style: italic;
+}

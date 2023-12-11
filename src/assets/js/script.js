@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showCursor: false,
     };
 
-    var typed = new Typed('#typed-output', options);
+    var typed = new Typed('.typed-output', options);
 
     var swiper = new Swiper('.case-studies-slider', {
         slidesPerView: 1,
@@ -90,5 +90,18 @@ document.addEventListener('DOMContentLoaded', function () {
     setHeader();
     window.addEventListener('scroll', function () {
         setHeader();
+    });
+    const preloader = document.querySelector('.preload');
+    setTimeout(function () {
+        preloader.style.display = 'none';
+    }, 1000);
+
+    AOS.init({
+        // offset: 200, // offset (in px) from the original trigger point
+        duration: 900, // duration (in ms) of the animation
+        easing: 'ease-in-out', // easing function to use
+        useClassNames: true, // if true, will add content of `data-aos` as classes on scroll
+        initClassName: false, // if false, the animation will wait until activated by calling `AOS.refresh()`
+        animatedClassName: 'fade-up', // the class applied to the animated element
     });
 });
