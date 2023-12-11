@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    :root {
+        --primary-100: 0, 123, 255;
+        --primary-200: 127, 17, 224;
+        --dark-100: 22, 30, 34;
+        --dark-200: 18, 24, 27;
+        --dark-300: 36, 45, 50;
+        --accent-100: 255, 255, 255;
+        --light-100: 145, 149, 151;
+        --light-200: 140, 143, 145;
+        --body-font: 'Articulat-CF', sans-serif;
+        --font-primary: 'Articulat-CF', sans-serif;
+        --font-secondary: 'Shruti-Font', sans-serif;
+    }
+    body {
+        scroll-behavior: smooth;
+    }
+    section {
+        scroll-margin-top: 100px;
+    }
+
+    .container {
+        @apply max-w-[74.6rem] w-full px-5 mx-auto;
+    }
+
+    .typed-output::before {
+        content: 'T';
+        font-size: 2px;
+        color: transparent;
+    }
+
+    .parallax-container {
+        position: relative;
+        height: 340px; /* Adjust the height as needed */
+        overflow: hidden;
+    }
+
+    .parallax-container .parallax-image {
+        width: 100%;
+        height: auto;
+        transform: translate3d(0, 0, 0);
+    }
+
+    header.scrolled {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.86);
+        color: white;
+    }
+    .shadow-custom-box {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
