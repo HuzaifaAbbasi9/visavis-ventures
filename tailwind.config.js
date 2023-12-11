@@ -167,18 +167,6 @@ function generateAspectRatios() {
 module.exports = {
     content: ['./src/*.{html,js,css}', './src/**/**/*.{html,js,css}'],
     theme: {
-        container: {
-            center: true,
-            padding: '1.25rem',
-            screens: {
-                xs: '100%',
-                sm: '550px',
-                md: '768px',
-                lg: '1024px',
-                xl: '1246px',
-                '2xl': '1500px',
-            },
-        },
         extend: {
             colors: {
                 primary: {
@@ -188,6 +176,7 @@ module.exports = {
                 dark: {
                     100: colorWithOpacity('--dark-100'),
                     200: colorWithOpacity('--dark-200'),
+                    300: colorWithOpacity('--dark-300'),
                 },
                 light: {
                     100: colorWithOpacity('--light-100'),
@@ -219,6 +208,7 @@ module.exports = {
             fontFamily: {
                 body: 'var(--body-font)',
                 primary: 'var(--font-primary)',
+                secondary: 'var(--font-secondary)',
             },
             transitionProperty: generateTransitionProperties(),
             animation: {
@@ -254,6 +244,9 @@ module.exports = {
                 fadeIn: 'fadeIn 0.2s ease-in-out forwards',
             },
         },
+    },
+    corePlugins: {
+        container: false,
     },
     variants: {
         extend: { textColor: ['group-checked'] },
