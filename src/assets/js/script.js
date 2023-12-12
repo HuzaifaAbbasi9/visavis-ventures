@@ -97,11 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
 
     AOS.init({
-        // offset: 200, // offset (in px) from the original trigger point
-        duration: 900, // duration (in ms) of the animation
-        easing: 'ease-in-out', // easing function to use
-        useClassNames: true, // if true, will add content of `data-aos` as classes on scroll
-        initClassName: false, // if false, the animation will wait until activated by calling `AOS.refresh()`
-        animatedClassName: 'fade-up', // the class applied to the animated element
+        offset: 200,
+        duration: 900,
+        easing: 'ease-in-out',
+        once: false, // Set to false to see the animation every time you scroll to the element
     });
 });
